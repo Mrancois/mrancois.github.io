@@ -1,0 +1,29 @@
+title: Portfolio - Francois Devove
+author: Francois Devove
+email: francoisdevove@gmail.com
+description: > # this means to ignore newlines until "twitter_username:"
+  I am a developer, tech enthusiast. Born and raise in France. Living in New-York City.
+  I develop with passion since I’m 15 years old. Master degree in Mobility and IoT (Internet of Things).
+  With 3+ years of professional experience.
+
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.html
+# - work.html
+# - contact.html
+
+# Build settings
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag

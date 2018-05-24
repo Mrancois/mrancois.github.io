@@ -1,0 +1,20 @@
+{% if page.path contains '_posts' %}
+  <header class="header-post">
+    <a href="#" onclick="window.history.go(-1); return false;"><i class="mdi mdi-close"></i></a>
+  </header>
+{% else %}
+  <header class="header" role="banner">
+      <a href="/">
+        <div class="header__logo">
+          <!--<img src="assets/img/logo.png" />-->
+          <span>Francois <div>(Dev)</div>ove</span>
+        </div>
+      </a>
+      <div class="header__menu">
+        <span><a href="/" onclick="clickMenu(this); return false;">About</a></span>
+        <span><a href="/" onclick="clickMenu(this); return false;">Work</a></span>
+        <span><a href="/" onclick="clickMenu(this); return false;">Skills</a></span>
+        <span><a href="/" onclick="clickMenu(this); return false;">Contact</a></span>
+      </div>
+  </header>
+{% endif %}

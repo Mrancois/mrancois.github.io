@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div class="space">
+  <article class="post-detail h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-detail__header">
+      <h1 class="post-detail__header__title" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-detail__header__meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+            </span>
+        {%- endif -%}</p>
+    </header>
+    <hr style="margin-bottom: 15px;"/>
+
+    <div class="post-detail__content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+      <div class="post-detail__content__techno">
+        {% if page.technologies %}
+          <h3>Develop with:</h3>
+          <div class="grid">
+            {% for techno in page.technologies %}
+              <div class="cell--3 skills__skill">
+                <div class="skills__skill__container-image">
+                  <img class="skills__skill__container-image--image" src="/assets/img/icons/{{ techno }}.png" />
+                </div>
+                <p class="skills__skill__text">{{ techno }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if page.screens %}
+          <div class="post-detail__content__screen">
+            <h3>Screen capture:</h3>
+            {% for screen in page.screens %}
+              <img style="border: 2px solid #000; width:50%; margin-left:25%;" src="/assets/img/projects/{{ page.pathimg }}/{{ screen }}.png" />
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+  </article>
+</div>

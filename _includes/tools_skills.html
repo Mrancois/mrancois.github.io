@@ -1,0 +1,18 @@
+<div id="scSkills" class="skills">
+  <div class="space">
+    <h1 class="block__title">Tools & Skills</h1>
+    <div class="grid">
+      {% for element in site.data.skills %}
+        <h2 class="skills_subtitle">{{ element.subtitle}}:</h2>
+        {% for skill in element.elements %}
+        <div class="cell--3 skills__skill">
+          <div class="skills__skill__container-image">
+            <img class="skills__skill__container-image--image" src="assets/img/icons/{{ skill.img }}.png" />
+          </div>
+          <p class="skills__skill__text">{{ skill.name }}</p>
+        </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

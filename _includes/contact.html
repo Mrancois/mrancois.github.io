@@ -1,0 +1,39 @@
+<div id="scContact" class="contact">
+  <div class="space">
+    <h1 class="block__title">Contact</h1>
+    <div id="contact__form">
+      <p>Have a question or want to work together?</p>
+      <p style="text-align: left; font-size: 12px; font-style: italic; font-weight: 100;">All fields are required</p>
+      <form>
+        <div class="grid">
+          <div class="cell--6">
+            <input class="full-width" type="email" placeholder="Email" id="emailInput" required>
+          </div>
+          <div class="cell--6">
+            <input class="full-width" type="text" placeholder="Name" id="nameInput" required>
+          </div>
+          <div class="cell--12">
+            <input class="full-width" type="text" placeholder="Subject" id="subjectInput" required>
+          </div>
+          <div class="cell--12">
+            <textarea class="full-width" placeholder="Message" id="messageInput" style="resize: none; min-height: 150px;" required></textarea>
+          </div>
+        <input id="btnSend" class="disable-btn" type="button" disabled value="Submit" onclick="submitContact()">
+        </div>
+      </form>
+    </div>
+
+    <div id="contact__form--success" class="no-display">
+      <h2><i class="mdi mdi-check"></i>&nbsp;&nbsp;Your message has been successfully sent</h2>
+      <p>Thank you for your interest</p>
+      <p>I will send you a reply as soon as possible.</p>
+    </div>
+
+    <div id="contact__form--error" class="no-display">
+      <h2><i class="mdi mdi-close"></i>&nbsp;&nbsp;Your message has not been sent</h2>
+      <p>Would you like to try again?</p>
+      <p>You can send me an email directly. <a href="#">Click here</a></p>
+    </div>
+
+  </div>
+</div>

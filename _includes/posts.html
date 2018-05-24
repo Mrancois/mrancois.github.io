@@ -1,0 +1,35 @@
+<div class="posts" id="scWork">
+  <div class="space">
+
+    <h1 class="block__title">Posts</h1>
+    <div id="filters" class="button-group">
+      <button class="button-filter is-checked" data-filter="*">show all</button>
+      <button class="button-filter" data-filter=".js">js</button>
+      <button class="button-filter" data-filter=".web">web</button>
+      <button class="button-filter" data-filter=".ios">ios</button>
+      <button class="button-filter" data-filter=".iot">iot</button>
+    </div>
+
+    {%- if site.posts.size > 0 -%}
+        <div id="post">
+          {%- for post in site.posts -%}
+            <div class="cell--4 post__item {{ post.type }}" data-category="{{ post.type }}" style="background-image: url('assets/img/{{ post.background }}'); background-size:100%; background-repeat:no-repeat; position:relative;">
+              <img src="assets/img/{{ post.background }}" style="visibility: hidden;" />
+
+              <a href="{{ post.url | relative_url }}">
+                <div class="post__item__details">
+                  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                  <p class="post__item__details__title">{{ post.title | escape }}</p>
+                  <p class="post__item__details__type">{{ post.type }}</p>
+                  <p class="post__item__details__more">LEARN MORE</p>
+                  {%- if site.show_excerpts -%}
+                    {{ post.excerpt }}
+                  {%- endif -%}
+                </div>
+              </a>
+            </div>
+          {%- endfor -%}
+        </div>
+    {%- endif -%}
+  </div>
+</div>

@@ -1,0 +1,547 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+@import "materialdesignicons";
+/*
+.element-item {
+  float: left;
+  background-color: grey;
+}
+*/
+.bigscreen_img {
+  width: 100%;
+  border: 2px solid #000000;
+  margin: 0 auto;
+  text-align: center;
+}
+.barduino__img {
+  width: 40%;
+  border: 2px solid #000000;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 30%;
+}
+.legend__picture {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+.header-post {
+  height: 55px;
+  display: flex;
+  a {
+    display: block;
+    margin-left: 10px;
+    font-size: 37px;
+    color: grey;
+  }
+  a:hover {
+    color: grey;
+  }
+  a:visited {
+    color: grey;
+  }
+}
+.post-detail {
+
+}
+.post-detail__header {
+
+}
+.post-detail__header__title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #ef504f;
+  text-align: center;
+}
+.post-detail__header__meta {
+  font-size: 14px;
+  color: #828282;
+  text-align: center;
+}
+
+
+article {
+  padding-bottom: 40px;
+  h3 {
+    color: #3498DB;
+    font-weight: 200;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+a {
+  color: #3498DB;
+}
+a:visited {
+  color: #3498DB;
+}
+a:hover {
+  color: #3498DB;
+  text-decoration: none;
+}
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.column, .columns {
+  margin-left: 0;
+}
+.full-width {
+  width: 100%;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: calc(100vh - 55px);
+}
+.about__content {
+  align-items: center;
+}
+.about__content__picture__container {
+  p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: 200;
+  }
+}
+
+.about__content__contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+  a {
+    margin: 0px 8px;
+  }
+}
+
+.about__content__description {
+  text-align: center;
+  h2 {
+    text-align: left;
+    padding: 0 10%;
+    color: #3498DB;
+  }
+}
+.about__content__description > p {
+  padding: 0 0 0 10%;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#filters {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.button-filter {
+  cursor: pointer;
+  margin: 0 5px;
+}
+.is-checked {
+  background-color: #3498DB;
+  color: #ffffff;
+}
+
+button {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px solid #3498DB;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3498DB;
+}
+
+input {
+  height: 34px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 100;
+  box-shadow: none;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+textarea {
+  padding: 10px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 100;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.posts {
+  text-align: center;
+}
+
+.block__title {
+  text-align: center;
+  border-bottom: 1px solid #EF504F;
+  border-top: 1px solid #EF504F;
+  color: #EF504F;
+  display: inline-block;
+  padding: 0px 25px;
+}
+
+.post__item__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.post__item__details:hover {
+  opacity: 1;
+  overflow: hidden;
+}
+
+.post__item__details__title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  padding: 0 10px;
+}
+.post__item__details__type {
+  text-align: center;
+  text-transform: uppercase;
+  color: #EF504F;
+  margin: 0 0 35px 0;
+  font-size: 25px;
+  font-weight: 200;
+}
+.post__item__details__more {
+  margin: 0 10%;
+  text-align: center;
+  border: 1px solid #3498DB;
+  color: #3498DB;
+  padding: 5px 0;
+}
+.post__item__details__more:hover {
+  background-color: #3498DB;
+  color: #f9f9f9;
+}
+
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  margin-top: 55px;
+}
+.space {
+  padding: 0% 10%;
+}
+.header {
+  background-color: #2C3E50;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 55px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__logo {
+  color: #ffffff;
+  line-height: 42px;
+  margin-left: 30px;
+  font-size: 22px;
+  font-weight: 100;
+  div {
+    display: inline-block;
+    height: 45px;
+    background: #ef504f9c;
+    border-radius: 100%;
+  }
+}
+.header__menu {
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  span {
+    margin-left: 10px;
+  }
+}
+.skills {
+  text-align: center;
+}
+.skills_subtitle {
+  width: 100%;
+  margin: 15px 0;
+  text-align: left;
+  color: #3498DB;
+}
+
+.skills__skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.skills__skill__container-image {
+  min-height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.skills__skill__container-image--image {
+  max-height: 110px;
+  max-width: 110px;
+}
+.skills__skill__text {
+  margin-bottom: 0;
+}
+
+.social {
+  padding: 20px 0;
+  background-color: #2C3E50;
+  div {
+    display: flex;
+    justify-content: center;
+    a {
+      color: #fff;
+
+      div {
+        width: 55px;
+        height: 55px;
+        margin: 0 15px;
+        font-size: 24pt;
+        align-items: center;
+        background-color: #3498DB;
+        -webkit-transition: font-size 0.3s ease; /* For Safari 3.1 to 6.0 */
+        transition: font-size 0.3s ease;
+      }
+      div:hover {
+        font-size: 18pt;
+      }
+    }
+    a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+.social__madeBy {
+  text-align: center;
+  margin: 20px;
+  font-weight: 100;
+  color: #FFFFFF;
+  i {
+    color: red;
+  }
+}
+
+.error-form {
+  border: 1px solid red !important;
+}
+.disable-btn {
+  background-color: lightgrey !important;
+  color: grey !important;
+  cursor: no-drop !important;
+}
+.enable-btn {
+  background-color: #3498DB !important;
+  border: 1px solid #3498DB;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.contact {
+  text-align: center;
+}
+
+.no-display {
+  display: none;
+}
+#contact__form--success {
+  color: #A1CD73;
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0;
+  }
+}
+#contact__form--error {
+  color: #D4273E;
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0;
+  }
+}
+
+.separator {
+  border-bottom: 1px solid #5a5a5a;
+  height: 1px;
+  margin: 20px 0;
+}
+
+/* --- GRID ( 100/(12/col) )--- */
+
+.cell--1 { width: 8.3333333333%; }
+.cell--2 { width: 16.6666666667%; }
+.cell--3 { width: 25%; }
+.cell--4 { width: 33.3333333333%; }
+.cell--5 { width: 41.6666666667%; }
+.cell--6 { width: 50%; }
+.cell--7 { width: 58.3333333333%; }
+.cell--8 { width: 66.6666666667%; }
+.cell--9 { width: 75%; }
+.cell--10 { width: 83.3333333333%; }
+.cell--11 { width: 91.6666666667%; }
+.cell--12 { width: 100%; }
+
+/* Lower than mobile */
+// @media (max-width: 414px) {}
+
+/* Larger than phablet */
+// @media (min-width: 550px) {}
+
+/* Larger than tablet */
+// @media (min-width: 750px) {}
+
+/* Larger than desktop */
+// @media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+// @media (min-width: 1200px) {}
+
+
+
+/* SMARTPHONES&nbsp;PORTRAIT */
+@media only screen and (min-width: 320px) and (max-width: 767px)
+{
+  /* cell */
+  .cell--3 { width: 33.3333333333%; }
+  .cell--4 { width: 50%; }
+  .cell--5 { width: 100%; }
+  .cell--6 { width: 100%; }
+  .cell--7 { width: 100%; }
+  /* general */
+  .space {
+    padding: 0% 5%;
+  }
+  .home {
+    margin-top: 83px;
+  }
+  /* header */
+  .header {
+    flex-direction: column;
+    min-height: 83px;
+  }
+  .header__logo {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .header__menu {
+    margin-right: 0;
+  }
+
+  /* about */
+  .about {
+    flex-direction: column;
+    height: auto;
+  }
+  .about__content__picture {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__content__picture__container {
+    width: 60%;
+  }
+  .about__content__description {
+    p {
+      padding: 0;
+    }
+    h2 {
+      padding: 0;
+    }
+  }
+
+  /* post */
+  .post__item__details__title {
+    font-size: 1em;
+  }
+
+  .post__item__details__type {
+    font-size: 1em;
+    margin: 0 0 10px 0;
+  }
+  .post__item__details__more {
+    display: none;
+  }
+  /* skills */
+  .skills__skill {
+    position: relative;
+  }
+  .skills__skill__container-image {
+    min-height: initial;
+    padding: 10%;
+  }
+  .skills__skill__container-image--image {
+    max-height: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  /* details post */
+  .barduino__img {
+    width: 80%;
+    margin-right: 10%;
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 992px) and (max-width: 1999px) {}

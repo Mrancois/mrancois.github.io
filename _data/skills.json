@@ -1,0 +1,142 @@
+[
+  {
+    "subtitle": "Front-End",
+    "elements": [
+      {
+        "name": "HTML5",
+        "img": "html5"
+      },
+      {
+        "name": "CSS3",
+        "img": "css3"
+      },
+      {
+        "name": "SASS",
+        "img": "sass"
+      },
+      {
+        "name": "Javascript",
+        "img": "javascript"
+      },
+      {
+        "name": "jQuery",
+        "img": "jquery"
+      },
+      {
+        "name": "NodeJS",
+        "img": "nodejs"
+      },
+      {
+        "name": "React",
+        "img": "react"
+      },
+      {
+        "name": "mjml (emailing)",
+        "img": "mjml"
+      }
+    ]
+  },
+  {
+    "subtitle": "Build tools",
+    "elements": [
+      {
+        "name": "Grunt",
+        "img": "grunt"
+      },
+      {
+        "name": "Webpack",
+        "img": "webpack"
+      },
+      {
+        "name": "Gulp",
+        "img": "gulp"
+      },
+      {
+        "name": "Bower",
+        "img": "bower"
+      }
+    ]
+  },
+
+  {
+    "subtitle": "Back-End",
+    "elements": [
+      {
+        "name": "Redis",
+        "img": "redis"
+      },
+      {
+        "name": "MongoDB",
+        "img": "mongodb"
+      },
+      {
+        "name": "MySQL",
+        "img": "mysql"
+      },
+      {
+        "name": "Redux",
+        "img": "redux"
+      },
+      {
+        "name": "JWT",
+        "img": "jwt"
+      },
+      {
+        "name": "AWS",
+        "img": "aws"
+      },
+      {
+        "name": "Docker",
+        "img": "docker"
+      },
+      {
+        "name": "Heroku",
+        "img": "heroku"
+      },
+      {
+        "name": "Codeship",
+        "img": "codeship"
+      },
+      {
+        "name": "django REST",
+        "img": "django"
+      }
+    ]
+  },
+
+  {
+    "subtitle": "CMS",
+    "elements": [
+      {
+        "name": "Wordpress",
+        "img": "wordpress"
+      },
+      {
+        "name": "Drupal",
+        "img": "drupal"
+      }
+    ]
+  },
+
+  {
+    "subtitle": "Others",
+    "elements": [
+      {
+        "name": "Swift",
+        "img": "swift"
+      },
+      {
+        "name": "Cocoapods",
+        "img": "cocoapods"
+      },
+      {
+        "name": "Python",
+        "img": "python"
+      },
+      {
+        "name": "GIT",
+        "img": "git"
+      }
+    ]
+  }
+]
