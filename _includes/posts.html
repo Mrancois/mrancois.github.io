@@ -13,8 +13,8 @@
     {%- if site.posts.size > 0 -%}
         <div id="post">
           {%- for post in site.posts -%}
-            <div class="cell--4 post__item {{ post.type }}" data-category="{{ post.type }}" style="background-image: url('assets/img/{{ post.background }}'); background-size:100%; background-repeat:no-repeat; position:relative;">
-              <img src="assets/img/{{ post.background }}" style="visibility: hidden;" />
+            <div class="cell--4 post__item {{ post.type }}" data-category="{{ post.type }}">
+              <img alt="{{ post.title }}" src="assets/img/{{ post.background }}" />
 
               <a href="{{ post.url | relative_url }}">
                 <div class="post__item__details">

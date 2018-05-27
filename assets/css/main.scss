@@ -10,6 +10,15 @@
   background-color: grey;
 }
 */
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
 .bigscreen_img {
   width: 100%;
   border: 2px solid #000000;
@@ -98,6 +107,14 @@ a:hover {
 .full-width {
   width: 100%;
 }
+.half-width--left {
+  width: calc(100% - 5px);
+  margin-right: 5px;
+}
+.half-width--right {
+  width: calc(100% - 5px);
+  margin-left: 5px;
+}
 .about {
   display: flex;
   flex-direction: row;
@@ -151,6 +168,8 @@ a:hover {
 .button-filter {
   cursor: pointer;
   margin: 0 5px;
+  font-size: 16px;
+  font-weight: 100;
 }
 .is-checked {
   background-color: #3498DB;
@@ -533,6 +552,12 @@ textarea {
     width: 100%;
   }
 
+  /* contact */
+  .half-width--left, .half-width--right {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
   /* details post */
   .barduino__img {
     width: 80%;
