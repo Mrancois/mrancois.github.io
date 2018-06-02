@@ -59,13 +59,15 @@ img[data-src] {
 .post-detail__header__background {
   position: absolute;
   opacity: 0.3;
+  height: 100%;
+  object-fit: cover;
 }
 .post-detail__header__container {
   position: relative;
 }
 .post-detail__header {
   background-color: #2C3E50;
-
+  position: relative;
 }
 .post-detail__header__title {
   font-size: 42px;
