@@ -44,19 +44,27 @@ img[data-src] {
     display: block;
     margin-left: 10px;
     font-size: 37px;
-    color: grey;
+    color: #FFF;
   }
   a:hover {
-    color: grey;
+    color: #FFF;
   }
   a:visited {
-    color: grey;
+    color: #FFF;
   }
 }
 .post-detail {
 
 }
+.post-detail__header__background {
+  position: absolute;
+  opacity: 0.3;
+}
+.post-detail__header__container {
+  position: relative;
+}
 .post-detail__header {
+  background-color: #2C3E50;
 
 }
 .post-detail__header__title {
@@ -67,9 +75,12 @@ img[data-src] {
   text-align: center;
 }
 .post-detail__header__meta {
-  font-size: 14px;
-  color: #828282;
+  font-size: 17px;
+  font-weight: 100;
+  color: #fff;
   text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 65px;
 }
 
 
@@ -223,7 +234,12 @@ textarea {
   display: inline-block;
   padding: 0px 25px;
 }
-
+.post__item {
+  background-color: #000000;
+  img {
+    opacity: 0.6;
+  }
+}
 .post__item__details {
   display: flex;
   flex-direction: column;
