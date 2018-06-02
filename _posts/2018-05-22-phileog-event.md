@@ -2,11 +2,11 @@
 layout: post
 title: "phileog-event"
 author: "Francois Devove"
-type: js
+type: [js]
 pathimg: "phileog-event"
 screens: [tchat]
 technologies: [javascript, react, react-router, redux, redis, socket.io, docker, aws]
-background: picture.jpg
+background: "phileog-event"
 
 ---
 ### Q&A

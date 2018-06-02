@@ -2,12 +2,11 @@
 layout: post
 title: "Registration Website & Badge"
 author: "Francois Devove"
-type: js
+type: [js]
 pathimg: "registration"
 screens: [screen_pdf]
 technologies: [javascript, nodejs, express, jwt, handlebars, wkhtmltopdf]
-background: picture.jpg
-
+background: "badge"
 ---
 ### Registration website:
 
