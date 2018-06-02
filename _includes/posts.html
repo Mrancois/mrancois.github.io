@@ -20,7 +20,14 @@
                 <div class="post__item__details">
                   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                   <p class="post__item__details__title">{{ post.title | escape }}</p>
-                  <p class="post__item__details__type">{{ post.type }}</p>
+                    <p class="post__item__details__type">
+                      {%- for type in post.type -%}
+                        <span>{{ type }}</span>
+                        {%- if (forloop.index) | modulo: 2 and forloop.last == false -%}
+                          <span> • </span>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </p>
                   <p class="post__item__details__more">LEARN MORE</p>
                   {%- if site.show_excerpts -%}
                     {{ post.excerpt }}
