@@ -1,26 +1,32 @@
 ---
 layout: default
 ---
-<div class="space">
   <article class="post-detail h-entry" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-detail__header">
-      <h1 class="post-detail__header__title" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post-detail__header__meta">
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {{ page.date | date: date_format }}
-        </time>
-        {%- if page.author -%}
-          • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
-            </span>
-        {%- endif -%}</p>
+      <img class="post-detail__header__background" alt="Background {{ page.title }}" src="/assets/img/projects/posts/{{ page.background }}-back.jpg" />
+      <div class="post-detail__header__container">
+        <div class="header-post">
+          <a href="#" onclick="window.history.go(-1); return false;"><i class="mdi mdi-close"></i></a>
+        </div>
+        <h1 class="post-detail__header__title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-detail__header__meta">
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ page.date | date: date_format }}
+          </time>
+          {%- if page.author -%}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+              </span>
+          {%- endif -%}
+        </p>
+        </div>
     </header>
     <hr style="margin-bottom: 15px;"/>
-
-    <div class="post-detail__content e-content" itemprop="articleBody">
-      {{ content }}
-    </div>
+    <div class="space">
+      <div class="post-detail__content e-content" itemprop="articleBody">
+        {{ content }}
+      </div>
       <div class="post-detail__content__techno">
         {% if page.technologies %}
           <h3>Develop with:</h3>
@@ -45,5 +51,5 @@ layout: default
           </div>
         {% endif %}
       </div>
+    </div>
   </article>
-</div>
